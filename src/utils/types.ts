@@ -25,5 +25,5 @@ export interface CryptoData {
 }
 
 export interface Props {
-  data: CryptoDataResponse[];
+  data: CryptoDataResponse;
 }

@@ -23,10 +23,9 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
 };
 
 const Home: NextPage<Props> = ({ data }: Props) => {
-  const [pageLimit, setpageLimit] = useState(20);
+  const pageLimit = 20;
   const [currentPage, setCurrentPage] = useState(1);
-  const totalElements = data.Data.Data.length as number;
-  console.log(" fd", data);
+  const totalElements = data.Data.Data.length;
 
   const changePage = (page: number) => {
     setCurrentPage(page);

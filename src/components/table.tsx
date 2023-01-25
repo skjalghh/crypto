@@ -1,4 +1,3 @@
-import { useState } from "react";
 import type { CryptoData, CryptoDataResponse } from "../utils/types";
 
 export const Table = ({
